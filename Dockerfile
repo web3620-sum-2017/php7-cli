@@ -25,11 +25,14 @@ RUN apk update && \
         php7-pdo_sqlite \
         php7-simplexml \
         php7-tokenizer \
+        php7-xdebug \
         php7-xmlwriter && \
         rm -fr /var/cache/apk/*
 
 # Install composer global bin
 RUN curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer
+
+ADD ./resources/php.ini /etc/php7/php.ini
 
 EXPOSE 8080
