@@ -23,6 +23,7 @@ RUN apk update && \
         php7-mbstring \
         php7-pdo \
         php7-pdo_sqlite \
+        php7-redis \
         php7-simplexml \
         php7-tokenizer \
         php7-xdebug \
