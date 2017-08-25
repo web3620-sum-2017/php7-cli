@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t donbstringham/alpine-php7-cli .
+docker build -t web4350/php7-cli .
