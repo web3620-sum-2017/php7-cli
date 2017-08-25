@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker run -it --rm -v $(pwd):/app web4350/php7-cli
+docker run -it --rm -v $(pwd):/app weber/php7-cli
